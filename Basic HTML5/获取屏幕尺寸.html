@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+    	body {
+    		
+    		margin: 0;
+    		padding: 0;
+    	}
+    	.content {
+    		width: 1200px;
+    		background: #F5F5F5;
+    	}
+        #box {
+            width: 320px;
+            height:640px;
+            background: green;
+            float: left;
+            border: 1px solid #FFFFFF;
+            /*box-sizing: border-box;*/
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*right: 0;*/
+        }
+        #box p {
+        	font-size: 12px;
+        }
+    </style>
+</head>
+<body onload="a()" >
+<div class="content">
+	<div id="box">
+	<img src="flower.jpg" alt="" />
+	<p>我是一段文字，我的大小是12px</p>
+</div>
+<p id="des"></p>
+</div>
+
+<script>
+
+        var des = document.getElementById('des');
+        function a(){
+            des.innerHTML = (
+                "屏幕DPR为："+window.devicePixelRatio
+                +"<br />"+
+                "屏幕分辨率为："+screen.width+"*"+screen.height
+                +"<br />"+
+                "屏幕可用大小："+screen.availWidth+"*"+screen.availHeight
+                +"<br />"+
+                "网页可见区域宽："+document.body.clientWidth
+                +"<br />"+
+                "网页可见区域高："+document.body.clientHeight
+                +"<br />"+
+                "网页可见区域宽(包括边线的宽)："+document.body.offsetWidth
+                +"<br />"+
+                "网页可见区域高(包括边线的宽)："+document.body.offsetHeight
+                +"<br />"+
+                "网页正文全文宽："+document.body.scrollWidth
+                +"<br />"+
+                "网页正文全文高："+document.body.scrollHeight
+                +"<br />"+
+                "网页被卷去的高："+document.body.scrollTop
+                +"<br />"+
+                "网页被卷去的左："+document.body.scrollLeft
+                +"<br />"+
+                "网页正文部分上："+window.screenTop
+                +"<br />"+
+                "网页正文部分上："+window.device
+                +"<br />"+
+                "网页正文部分左："+window.screenLeft
+                +"<br />"+
+                "屏幕分辨率的高："+window.screen.height
+                +"<br />"+
+                "屏幕分辨率的宽："+window.screen.width
+                +"<br />"+
+                "屏幕可用工作区高度："+window.screen.availHeight
+                +"<br />"+
+                "屏幕可用工作区宽度："+window.screen.availWidth
+            );
+
+    };
+
+</script>
+
+</body>
+</html>
