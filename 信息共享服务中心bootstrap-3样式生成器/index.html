@@ -1,0 +1,170 @@
+<!-- 基础Bootstrap文档 -->
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <title>基础Bootstrap文档</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      .btnBox {
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btnBox">
+      <!-- Standard button -->
+      <button type="button" class="btn btn-default">成功按钮</button>
+
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-primary">绿色按钮</button>
+
+      <!-- Indicates a successful or positive action -->
+      <button type="button" class="btn btn-success">成功按钮</button>
+
+      <!-- Contextual button for informational alert messages -->
+      <button type="button" class="btn btn-info">（一般信息）Info</button>
+
+      <!-- Indicates caution should be taken with this action -->
+      <button type="button" class="btn btn-warning">（警告）Warning</button>
+
+      <!-- Indicates a dangerous or potentially negative action -->
+      <button type="button" class="btn btn-danger">（危险）Danger</button>
+
+      <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+      <button type="button" class="btn btn-link">（链接）Link</button>
+    </div>
+    <div class="pBox">
+      <p>我是正文</p>
+      <h1>我是标题一</h1>
+      <h2>我是标题一</h2>
+      <h3>我是标题一</h3>
+      <h4>我是标题一</h4>
+      <h5>我是标题一</h5>
+      <h6>我是标题一</h6>
+      <p class="small">我是标题一</p>
+
+
+      <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+      <div class="input-group-addon">.00</div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Transfer cash</button>
+</form>
+
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+<select multiple class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputSuccess2">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputSuccess2Status" class="sr-only">(success)</span>
+</div>
+<div class="form-group has-warning has-feedback">
+  <label class="control-label" for="inputWarning2">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+  <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+  <span id="inputWarning2Status" class="sr-only">(warning)</span>
+</div>
+<div class="form-group has-error has-feedback">
+  <label class="control-label" for="inputError2">Input with error</label>
+  <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+  <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+  <span id="inputError2Status" class="sr-only">(error)</span>
+</div>
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+  <div class="input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+  </div>
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+</div>
+
+<input class="form-control input-lg" type="text" placeholder=".input-lg">
+<input class="form-control" type="text" placeholder="Default input">
+<input class="form-control input-sm" type="text" placeholder=".input-sm">
+
+<select class="form-control input-lg">...</select>
+<select class="form-control">...</select>
+<select class="form-control input-sm">...</select>
+<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<span class="caret"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  
+
+
+
+
+
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/myJs.js"></script>
+  </body>
+</html>

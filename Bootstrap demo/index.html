@@ -1,0 +1,74 @@
+<!-- 基础Bootstrap文档 -->
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <title>基础Bootstrap文档</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="sty">
+      <div>
+        <form action="">
+          <div class="switch">
+            <div class="sty pull-right">
+              <!-- 响应信息 -->
+              <div class="panel defpanel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <spring:message code="form_form.messageInfo"></spring:message>
+                  </h3>
+                </div>
+                <div class="time">
+                  <c:choose>
+                    <c:when test="${hasMarReply}">
+                    <!-- 请查阅留言,并回复! -->
+                      <span><spring:message code="form_form.hasMarReply"></spring:message></span>
+                    </c:when>
+                    <c:when test="${entity.state == '3'}">
+                    <!-- 已关闭 -->
+                      <span><spring:message code="form_form.hasMarReply"></spring:message></span>
+                    </c:when>
+                    <c:when test="${entity.state == '1'}">
+                    <!-- 已回复,请验证! -->
+                      <span><spring:message code="form_form.hasMarReply"></spring:message></span>
+                    </c:when>
+                    <c:when test="${entity.state == '2'}">
+                    <!-- 系统派发中 -->
+                      <span><spring:message code="form_form.hasMarReply"></spring:message></span>
+                    </c:when>
+                    <c:otherwise>
+                      <span id="hour_show">00:</span>  
+                      <span id="minute_show">00:</span>  
+                      <span id="second_show">00</span>  
+                    </c:otherwise>
+                  </c:choose>
+                </div>
+                <div class="panel-body panel-default">
+                  <ul>
+                    <c:if
+                    <li><label for=""></label></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/myJs.js"></script>
+  </body>
+</html>
